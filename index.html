@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xakura's Space</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      max-width: 640px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(56, 189, 248, 0.12);
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+    h1 {
+      font-size: 1.85rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    p {
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+    .quote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+      color: #cbd5e1;
+      font-style: italic;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="tag">DEPLOYED VIA GITHUB MCP</span>
+    <h1>Hello, World.</h1>
+    <p>这是一个通过 GitHub MCP Server 自动生成的静态页面，用来测试仓库创建与内容推送流程。</p>
+    <p>代码跑通的那一刻，世界安静得只剩下风扇轻微的嗡鸣和终端里干净的输出。</p>
+    <div class="quote">“Stay curious, keep building.”</div>
+  </main>
+</body>
+</html>
